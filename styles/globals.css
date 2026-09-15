@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+@tailwind base; @tailwind components; @tailwind utilities;
+html,body{background:#F0F1EC;color:#20262B;margin:0}.ledger-bg{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 31px,#D8D9CF 31px,#D8D9CF 32px)}
+.focus-ring:focus-visible{outline:2px solid #2B4570;outline-offset:2px}.tool-help{font-size:.9rem;line-height:1.6;color:rgba(32,38,43,.68);margin-bottom:1.25rem}.field{border:1px solid rgba(32,38,43,.28);background:rgba(255,255,255,.28);padding:.65rem .75rem;font-size:.875rem;outline:none}.field:focus{border-color:#2B4570;box-shadow:0 0 0 2px rgba(43,69,112,.12)}.section-label{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;letter-spacing:.12em;color:rgba(32,38,43,.42);margin:0 0 .7rem}.tool-list{border-top:1px solid #D8D9CF}.tool-nav{width:100%;text-align:left;padding:.7rem .65rem;border-bottom:1px solid #D8D9CF;display:flex;justify-content:space-between;gap:8px;color:rgba(32,38,43,.58);font-size:.85rem}.tool-nav small{font-size:.68rem;color:rgba(32,38,43,.35)}.tool-nav:hover,.tool-nav.active{color:#20262B;background:rgba(255,255,255,.42)}.tool-nav.active{border-left:3px solid #2B4570;padding-left:calc(.65rem - 3px)}.privacy-note{border-left:3px solid #2B4570;background:rgba(255,255,255,.35);padding:.9rem 1rem;font-size:.8rem;color:rgba(32,38,43,.65)}.paper-card{border:1px solid #D8D9CF;background:rgba(255,255,255,.28);padding:.8rem;line-height:1.5}.paper-card b{color:#20262B;font-weight:600}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82em}
+
+/* Mobile tool placement: keep the desktop layout unchanged, but place the
+   active tool immediately below the selected tool on small screens. */
+.mobile-tool-panel{display:none}
+.tool-nav-wrap{display:block}
+@media (max-width: 1023px){
+  .desktop-tool-area{display:none}
+  .mobile-tool-panel{display:block;margin:0 0 .75rem 0;padding:1.25rem;background:rgba(255,255,255,.50);border:1px solid #D8D9CF;border-top:0}
+  .mobile-tool-panel .tool-help{font-size:.84rem}
+  .mobile-tool-panel .field{max-width:100%}
+}
+@media (min-width: 1024px){
+  .tool-nav-wrap > .mobile-tool-panel{display:none}
+}
