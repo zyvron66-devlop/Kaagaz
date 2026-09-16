@@ -275,6 +275,24 @@ export default function Home() {
 
 
         {/* =================================================
+            GOOGLE SITE NAME
+            ================================================= */}
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Kaagaz PDF-Tools",
+              "alternateName": "Kaagaz",
+              "url": "https://zyvron66-devlop.github.io/Kaagaz/",
+            }),
+          }}
+        />
+
+
+        {/* =================================================
             FAVICON / LOGO
             ================================================= */}
 
