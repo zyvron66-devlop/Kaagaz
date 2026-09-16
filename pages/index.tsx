@@ -246,7 +246,7 @@ export default function Home() {
       <Head>
 
         {/* =================================================
-            PAGE TITLE
+            SEO TITLE
             ================================================= */}
 
         <title>
@@ -260,7 +260,17 @@ export default function Home() {
 
         <meta
           name="description"
-          content="Kaagaz PDF-Tools is a free online PDF toolkit for merging, splitting, compressing, converting and editing PDF files directly in your browser."
+          content="Kaagaz PDF-Tools is a free browser-based PDF toolkit for merging, splitting, compressing, converting, rotating, cropping, watermarking and editing PDF files."
+        />
+
+
+        {/* =================================================
+            KEYWORDS
+            ================================================= */}
+
+        <meta
+          name="keywords"
+          content="Kaagaz PDF-Tools, Kaagaz, PDF tools, free PDF tools, online PDF tools, merge PDF, split PDF, compress PDF, PDF editor, PDF converter"
         />
 
 
@@ -270,7 +280,17 @@ export default function Home() {
 
         <meta
           name="robots"
-          content="index,follow"
+          content="index, follow"
+        />
+
+
+        {/* =================================================
+            CANONICAL URL
+            ================================================= */}
+
+        <link
+          rel="canonical"
+          href="https://zyvron66-devlop.github.io/Kaagaz/"
         />
 
 
@@ -287,6 +307,28 @@ export default function Home() {
               "name": "Kaagaz PDF-Tools",
               "alternateName": "Kaagaz",
               "url": "https://zyvron66-devlop.github.io/Kaagaz/",
+              "description":
+                "Free browser-based PDF tools for merging, splitting, compressing, converting and editing PDF files.",
+            }),
+          }}
+        />
+
+
+        {/* =================================================
+            ORGANIZATION / BRAND
+            ================================================= */}
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Kaagaz PDF-Tools",
+              "url":
+                "https://zyvron66-devlop.github.io/Kaagaz/",
+              "logo":
+                "https://zyvron66-devlop.github.io/Kaagaz/kaagaz-logo.png",
             }),
           }}
         />
@@ -335,6 +377,16 @@ export default function Home() {
         <meta
           property="og:type"
           content="website"
+        />
+
+        <meta
+          property="og:url"
+          content="https://zyvron66-devlop.github.io/Kaagaz/"
+        />
+
+        <meta
+          property="og:site_name"
+          content="Kaagaz PDF-Tools"
         />
 
         <meta
