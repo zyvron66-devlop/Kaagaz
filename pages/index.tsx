@@ -245,18 +245,83 @@ export default function Home() {
     <>
       <Head>
 
+        {/* =================================================
+            PAGE TITLE
+            ================================================= */}
+
         <title>
-          Kaagaz — Private PDF tools in your browser
+          Kaagaz PDF-Tools — Free Online PDF Tools
         </title>
+
+
+        {/* =================================================
+            SEO DESCRIPTION
+            ================================================= */}
 
         <meta
           name="description"
-          content="Free browser-based PDF tools for merging, splitting, compressing, converting and editing PDFs. No account required."
+          content="Kaagaz PDF-Tools is a free online PDF toolkit for merging, splitting, compressing, converting and editing PDF files directly in your browser."
         />
+
+
+        {/* =================================================
+            SEARCH ENGINE
+            ================================================= */}
 
         <meta
           name="robots"
           content="index,follow"
+        />
+
+
+        {/* =================================================
+            FAVICON / LOGO
+            ================================================= */}
+
+        <link
+          rel="icon"
+          type="image/png"
+          href="/Kaagaz/kaagaz-logo.png"
+        />
+
+        <link
+          rel="apple-touch-icon"
+          href="/Kaagaz/kaagaz-logo.png"
+        />
+
+
+        {/* =================================================
+            THEME COLOR
+            ================================================= */}
+
+        <meta
+          name="theme-color"
+          content="#f5f3ed"
+        />
+
+
+        {/* =================================================
+            OPEN GRAPH
+            ================================================= */}
+
+        <meta
+          property="og:title"
+          content="Kaagaz PDF-Tools — Free Online PDF Tools"
+        />
+
+        <meta
+          property="og:description"
+          content="Free browser-based PDF tools for merging, splitting, compressing, converting and editing PDFs."
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+
+        <meta
+          property="og:image"
+          content="https://zyvron66-devlop.github.io/Kaagaz/kaagaz-logo.png"
         />
 
       </Head>
